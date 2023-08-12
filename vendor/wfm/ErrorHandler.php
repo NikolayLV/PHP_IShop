@@ -43,6 +43,17 @@ class ErrorHandler
     protected function displayError($errno, $errstr, $errfile, $errline, $responce = 500)
     {
 
+        if ($responce == 0) {
+            $responce = 404;
+        }
+        http_response_code($responce);
+
+        if ($responce == 404 && !DEBUG) {
+
+            require WWW . '/errors/404.php';
+            die;
+
+        }
     }
 
 }
