@@ -17,7 +17,15 @@ class ErrorHandler
             error_reporting(0);
         }
         set_exception_handler([$this, 'exceptionHandler']);
+        set_error_handler([$this, 'errorHandler']);
+        ob_start();
+        register_shutdown_function([$this, 'fatalErrorHandler']);
 
+    }
+
+    public function errorHandler($errno, $errstr, $errfile, $errline) {
+        $this->logError($errstr, $errfile, $errline);
+        $this->displayError($errno, $errstr, $errfile, $errline);
     }
 
     public function exceptionHandler(\Throwable $e)
@@ -54,6 +62,13 @@ class ErrorHandler
             die;
 
         }
+        if (DEBUG) {
+            require WWW . '/errors/development.php';
+        }
+        else {
+            require WWW . '/errors/production.php';
+        }
+        die;
     }
 
 }
