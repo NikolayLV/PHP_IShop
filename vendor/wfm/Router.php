@@ -4,6 +4,8 @@
 namespace wfm;
 
 
+use mysql_xdevapi\Exception;
+
 class Router
 {
 
@@ -24,12 +26,25 @@ class Router
         return self::$route;
     }
 
+    /**
+     * @throws \Exception
+     */
     public static function dispatch($url) {
 
         if (self::matchRoute($url)) {
-            echo 'Ok';
+
+            $controller = 'app\controllers\\' . self::$route['admin_prefix'] .
+            self::$route['controller'] . 'Controller';
+            if (class_exists($controller)) {
+                $controllerObject = new $controller(self::$route);
+            } else {
+                throw new \Exception("Контролер {$controller} не найден", 404);
+
+            }
+
         } else {
-            echo "No";
+            throw new \Exception("Страница не найдена", 404);
+
         }
     }
 
@@ -47,11 +62,10 @@ class Router
                 if (!isset($route['admin_prefix'])) {
                     $route['admin_prefix'] = '';
                 } else {
-                    $route['admin_prefix'] = '\\';
+                    $route['admin_prefix'] .= '\\';
                 }
-                debug($route);
                 $route['controller'] = self::upperCamelCase($route['controller']);
-                debug($route);
+                self::$route = $route;
                 return true;
             }
         }
