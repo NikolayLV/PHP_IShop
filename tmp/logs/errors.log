@@ -14,3 +14,19 @@
 =================
 [2023-08-14 11:25:33] Текст ошибки: Undefined constant "Test" | Файл: C:\OSPanel\domains\new-ishop.loc\public\index.php | Строка: 13
 =================
+[2023-08-14 18:53:46] Текст ошибки: Контролер app\controllers\admin\MainController не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 47
+=================
+[2023-08-14 18:53:50] Текст ошибки: Контролер app\controllers\MainController не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 47
+=================
+[2023-08-14 18:53:51] Текст ошибки: Контролер app\controllers\MainController не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 47
+=================
+[2023-08-14 18:54:26] Текст ошибки: Метод app\controllers\MainController::indexAction не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 44
+=================
+[2023-08-14 18:56:04] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 52
+=================
+[2023-08-14 18:56:07] Текст ошибки: Метод app\controllers\PageController::vieAction не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 44
+=================
+[2023-08-14 18:56:49] Текст ошибки: Метод app\controllers\admin\MainController::indexAction не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 44
+=================
+[2023-08-14 18:56:49] Текст ошибки: Метод app\controllers\admin\MainController::indexAction не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 44
+=================
