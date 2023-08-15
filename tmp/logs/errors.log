@@ -30,3 +30,7 @@
 =================
 [2023-08-14 18:56:49] Текст ошибки: Метод app\controllers\admin\MainController::indexAction не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 44
 =================
+[2023-08-15 13:20:58] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 52
+=================
+[2023-08-15 13:37:00] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 52
+=================
