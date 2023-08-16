@@ -4,7 +4,9 @@
 namespace app\controllers\admin;
 
 
-class mainController
+use wfm\Controller;
+
+class mainController extends Controller
 {
 
     public function indexAction(){

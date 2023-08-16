@@ -36,3 +36,19 @@
 =================
 [2023-08-16 12:41:52] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 62
 =================
+[2023-08-16 13:32:53] Текст ошибки: Call to undefined method app\controllers\admin\mainController::getModel() | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 56
+=================
+[2023-08-16 13:32:54] Текст ошибки: Call to undefined method app\controllers\admin\mainController::getModel() | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 56
+=================
+[2023-08-16 13:38:34] Текст ошибки: syntax error, unexpected token "}" | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 35
+=================
+[2023-08-16 13:39:19] Текст ошибки: Не найдет вид C:\OSPanel\domains\new-ishop.loc/app/view/Main/index.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 37
+=================
+[2023-08-16 13:39:43] Текст ошибки: Не найдет вид C:\OSPanel\domains\new-ishop.loc/app/view/Main/index.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 37
+=================
+[2023-08-16 13:41:10] Текст ошибки: Не найдет вид C:\OSPanel\domains\new-ishop.loc/app/view/Main/index.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 37
+=================
+[2023-08-16 13:44:23] Текст ошибки: Не найден шаблон C:\OSPanel\domains\new-ishop.loc/app/views/layouts/ishop.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 47
+=================
+[2023-08-16 13:45:06] Текст ошибки: Не найден шаблон C:\OSPanel\domains\new-ishop.loc/app/views/layouts/index.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 47
+=================
