@@ -68,3 +68,5 @@
 =================
 [2023-08-17 12:21:50] Текст ошибки: Undefined variable $name | Файл: C:\OSPanel\domains\new-ishop.loc\app\views\Main\index.php | Строка: 8
 =================
+[2023-08-17 12:58:29] Текст ошибки: Call to a member function find() on null | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Facade.php | Строка: 1026
+=================
