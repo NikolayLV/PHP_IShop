@@ -14,7 +14,8 @@ class MainController extends Controller
 
     public function indexAction() {
        // 'default' or 'ishop'
-        $this->layout = "default";
+        $this->setMeta('Главная страница','Description','KeyWords');
+        $this->layout = "ishop";
     }
 
 }
