@@ -63,7 +63,9 @@ class View
                 getLogger();
 
             $logs = array_merge($logs->grep('SELECT'), $logs->gren('select'),
-            $logs->grep('INSERT'));
+            $logs->grep('INSERT'), $logs->grep('UPDATE'),
+            $logs->grep('DELETE'));
+            debug($logs);
         }
     }
 
