@@ -70,3 +70,5 @@
 =================
 [2023-08-17 12:58:29] Текст ошибки: Call to a member function find() on null | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Facade.php | Строка: 1026
 =================
+[2023-08-18 13:54:51] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 73
+=================

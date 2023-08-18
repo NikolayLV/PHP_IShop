@@ -6,7 +6,9 @@ namespace app\controllers;
 
 use RedBeanPHP\R;
 use wfm\Controller;
-
+/**
+@property Main $model
+ */
 class MainController extends Controller
 {
 
@@ -15,8 +17,7 @@ class MainController extends Controller
 
     public function indexAction() {
        // 'default' or 'ishop'
-        $names = R::findAll('name');
-        debug($names);
+        $names = $this->model->get_names();
         $this->setMeta('Главная страница','Description','KeyWords');
         $this->layout = "ishop";
     }
