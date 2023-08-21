@@ -2,7 +2,7 @@
 $this->getDbLogs(); ?>
 
 </body>
-<footer>
+<footer class="footer">
 	Footer
 </footer>
 </html>
