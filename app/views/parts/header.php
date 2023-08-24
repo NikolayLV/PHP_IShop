@@ -17,3 +17,6 @@ use wfm\View;
     <?= $this->getMeta() ?>
 </head>
 <body>
+	<section class="main_section">
+		Main info
+	</section>
