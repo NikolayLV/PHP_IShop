@@ -8,14 +8,14 @@ use wfm\View;
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
+	<base href="/">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= PATH ?>/assets/bootstrap/css/bootstrap.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="<?= PATH ?>/assets/css/main.css">
 	<title>Shop</title>
 </head>
 <body>
@@ -63,7 +63,7 @@ use wfm\View;
 											<tbody>
 												<tr>
 													<td>
-														<a href="#"><img src="img/products/apple_cinema_30.jpg" alt=""></a>
+														<a href="#"><img src="<?= PATH ?>/assets/img/products/apple_cinema_30.jpg" alt=""></a>
 													</td>
 													<td><a href="#">Apple cinema</a></td>
 													<td>1</td>
@@ -71,7 +71,7 @@ use wfm\View;
 												</tr>
 												<tr>
 													<td>
-														<a href="#"><img src="img/products/canon_eos_5d_1.jpg" alt=""></a>
+														<a href="#"><img src="<?= PATH ?>/assets/img/products/canon_eos_5d_1.jpg" alt=""></a>
 													</td>
 													<td><a href="#">Canon EOS</a></td>
 													<td>1</td>
@@ -79,7 +79,7 @@ use wfm\View;
 												</tr>
 												<tr>
 													<td>
-														<a href="#"><img src="img/products/hp_1.jpg" alt=""></a>
+														<a href="#"><img src="<?= PATH ?>/assets/img/products/hp_1.jpg" alt=""></a>
 													</td>
 													<td><a href="#">HP</a></td>
 													<td>1</td>
@@ -110,12 +110,12 @@ use wfm\View;
 
 						<div class="dropdown d-inline-block">
 							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-								<img src="img/ru.png" alt="">
+								<img src="<?= PATH ?>/assets/img/ru.png" alt="">
 							</a>
 							<ul class="dropdown-menu" id="languages">
 								<li>
 									<button class="dropdown-item" data-langcode="en">
-										<img src="img/en.png" alt="">
+										<img src="<?= PATH ?>/assets/img/en.png" alt="">
 										English</button>
 								</li>
 							</ul>
@@ -179,13 +179,13 @@ use wfm\View;
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="img/1.jpg" class="d-block w-100" alt="...">
+					<img src="<?= PATH ?>/assets/img/1.jpg" class="d-block w-100" alt="...">
 				</div>
 				<div class="carousel-item">
-					<img src="img/2.jpg" class="d-block w-100" alt="...">
+					<img src="<?= PATH ?>/assets/img/2.jpg" class="d-block w-100" alt="...">
 				</div>
 				<div class="carousel-item">
-					<img src="img/3.jpg" class="d-block w-100" alt="...">
+					<img src="<?= PATH ?>/assets/img/3.jpg" class="d-block w-100" alt="...">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
@@ -211,7 +211,7 @@ use wfm\View;
 				<div class="col-lg-4 col-sm-6 mb-3">
 					<div class="product-card">
 						<div class="product-tumb">
-							<a href="product.html"><img src="img/products/iphone_1.jpg" alt=""></a>
+							<a href="product.html"><img src="<?= PATH ?>/assets/img/products/iphone_1.jpg" alt=""></a>
 						</div>
 						<div class="product-details">
 							<h4><a href="product.html">iPhone iPhone iPhone iPhone iPhone</a></h4>
@@ -230,7 +230,7 @@ use wfm\View;
 				<div class="col-lg-4 col-sm-6 mb-3">
 					<div class="product-card">
 						<div class="product-tumb">
-							<a href="product.html"><img src="img/products/canon_eos_5d_1.jpg" alt=""></a>
+							<a href="product.html"><img src="<?= PATH ?>/assets/img/products/canon_eos_5d_1.jpg" alt=""></a>
 						</div>
 						<div class="product-details">
 							<h4><a href="product.html">Canon EOS 5D</a></h4>
@@ -249,7 +249,7 @@ use wfm\View;
 				<div class="col-lg-4 col-sm-6 mb-3">
 					<div class="product-card">
 						<div class="product-tumb">
-							<a href="product.html"><img src="img/products/hp_1.jpg" alt=""></a>
+							<a href="product.html"><img src="<?= PATH ?>/assets/img/products/hp_1.jpg" alt=""></a>
 						</div>
 						<div class="product-details">
 							<h4><a href="product.html">HP</a></h4>
@@ -268,7 +268,7 @@ use wfm\View;
 				<div class="col-lg-4 col-sm-6 mb-3">
 					<div class="product-card">
 						<div class="product-tumb">
-							<a href="product.html"><img src="img/products/apple_cinema_30.jpg" alt=""></a>
+							<a href="product.html"><img src="<?= PATH ?>/assets/img/products/apple_cinema_30.jpg" alt=""></a>
 						</div>
 						<div class="product-details">
 							<h4><a href="product.html">Apple cinema 30"</a></h4>
@@ -287,7 +287,7 @@ use wfm\View;
 				<div class="col-lg-4 col-sm-6 mb-3">
 					<div class="product-card">
 						<div class="product-tumb">
-							<a href="product.html"><img src="img/products/imac_1.jpg" alt=""></a>
+							<a href="product.html"><img src="<?= PATH ?>/assets/img/products/imac_1.jpg" alt=""></a>
 						</div>
 						<div class="product-details">
 							<h4><a href="product.html">iMac</a></h4>
@@ -306,7 +306,7 @@ use wfm\View;
 				<div class="col-lg-4 col-sm-6 mb-3">
 					<div class="product-card">
 						<div class="product-tumb">
-							<a href="product.html"><img src="img/products/imac_1.jpg" alt=""></a>
+							<a href="product.html"><img src="<?= PATH ?>/assets/img/products/imac_1.jpg" alt=""></a>
 						</div>
 						<div class="product-details">
 							<h4><a href="product.html">iMac</a></h4>
@@ -415,11 +415,11 @@ use wfm\View;
 	</button>
 
 
-	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="<?= PATH ?>/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
 			crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+	<script src="<?= PATH ?>/assets/js/main.js"></script>
 
 </body>
 </html>
