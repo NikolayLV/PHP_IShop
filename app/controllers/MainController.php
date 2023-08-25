@@ -1,26 +1,22 @@
 <?php
 
-
 namespace app\controllers;
 
 
+use app\models\Main;
 use RedBeanPHP\R;
 use wfm\Controller;
-/**
-@property Main $model
- */
+
+/** @property Main $model */
 class MainController extends Controller
 {
 
-//    public false|string $layout = 'test2';
-
-
-    public function indexAction() {
-       // 'default' or 'ishop'
+    public function indexAction()
+    {
         $names = $this->model->get_names();
-        $one_game = R::getRow( 'SELECT * FROM name WHERE id = 2');
-        $this->setMeta('Главная страница','Description','KeyWords');
-        $this->layout = "ishop";
+        $one_name = R::getRow( 'SELECT * FROM name WHERE id = 2');
+        $this->setMeta('Главная страница', 'Description...', 'keywords...');
+        $this->set(compact('names'));
     }
 
 }

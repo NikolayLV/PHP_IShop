@@ -6,11 +6,12 @@ namespace app\controllers\admin;
 
 use wfm\Controller;
 
-class mainController extends Controller
+class MainController extends Controller
 {
 
-    public function indexAction(){
-        echo "<h1>There is Admin Zone</h1>";
+    public function indexAction()
+    {
+        echo '<h1>ADMIN AREA</h1>';
     }
 
 }
