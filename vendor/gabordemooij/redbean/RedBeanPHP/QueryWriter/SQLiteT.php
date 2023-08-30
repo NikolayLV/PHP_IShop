@@ -45,11 +45,6 @@ class SQLiteT extends AQueryWriter implements QueryWriter
 	/**
 	 * @var array
 	 */
-	protected $tableArchive = array();
-
-	/**
-	 * @var array
-	 */
 	protected $DDLTemplates = array(
 		'addColumn' => array(
 			'*' => 'ALTER TABLE `%s` ADD `%s` %s'
@@ -302,6 +297,8 @@ class SQLiteT extends AQueryWriter implements QueryWriter
 	 */
 	public function scanType( $value, $flagSpecial = FALSE )
 	{
+		$this->svalue = $value;
+
 		if ( $value === NULL ) return self::C_DATATYPE_INTEGER;
 		if ( $value === INF ) return self::C_DATATYPE_TEXT;
 
@@ -431,9 +428,9 @@ class SQLiteT extends AQueryWriter implements QueryWriter
 	 * Sets an SQL snippet to be used for the next queryRecord() operation.
 	 * SQLite has no SELECT-FOR-UPDATE and filters this.
 	 *
-	 * @param string $sqlSelectSnippet SQL snippet to use in SELECT statement.
+	 * @param string $sql SQL snippet to use in SELECT statement.
 	 *
-	 * @return self
+	 * return self
 	 */
 	public function setSQLSelectSnippet( $sqlSelectSnippet = '' ) {
 		if ( $sqlSelectSnippet === AQueryWriter::C_SELECT_SNIPPET_FOR_UPDATE) $sqlSelectSnippet = '';

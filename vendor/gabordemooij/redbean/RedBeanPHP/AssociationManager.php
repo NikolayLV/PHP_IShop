@@ -41,11 +41,6 @@ class AssociationManager extends Observable
 	protected $writer;
 
 	/**
-	 * @var ToolBox
-	 */
-	public $toolbox;
-
-	/**
 	 * Exception handler.
 	 * Fluid and Frozen mode have different ways of handling
 	 * exceptions. Fluid mode (using the fluid repository) ignores
@@ -223,7 +218,7 @@ class AssociationManager extends Observable
 	 *
 	 * @param OODBBean|array $bean     a bean object or an array of beans
 	 * @param string         $type     type of bean you're interested in
-	 * @param string|NULL    $sql      SQL snippet (optional)
+	 * @param string         $sql      SQL snippet (optional)
 	 * @param array          $bindings bindings for your SQL string
 	 *
 	 * @return integer
@@ -342,7 +337,7 @@ class AssociationManager extends Observable
 	 * Since 3.2, you can now also pass an array of beans instead just one
 	 * bean as the first parameter.
 	 *
-	 * @param OODBBean       $bean the bean you have
+	 * @param OODBBean|array $bean the bean you have
 	 * @param string         $type      the type of beans you want
 	 * @param string         $sql       SQL snippet for extra filtering
 	 * @param array          $bindings  values to be inserted in SQL slots

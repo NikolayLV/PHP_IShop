@@ -219,6 +219,8 @@ class CUBRID extends AQueryWriter implements QueryWriter
 	 */
 	public function scanType( $value, $flagSpecial = FALSE )
 	{
+		$this->svalue = $value;
+
 		if ( is_null( $value ) ) {
 			return self::C_DATATYPE_INTEGER;
 		}

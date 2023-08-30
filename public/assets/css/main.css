@@ -187,7 +187,7 @@ li a.dropdown-item:focus, li a.dropdown-item:hover {
 }
 
 .modal-body a {
-	color: #ea8287;
+	color: #ee6e73;
 }
 /* Header top */
 
@@ -225,6 +225,8 @@ li a.dropdown-item:focus, li a.dropdown-item:hover {
 /* Carousel */
 .my-carousel {
 	padding: 0;
+	position: relative;
+	top: -10px;
 }
 .my-carousel .carousel-item {
 	display: flex;

@@ -200,7 +200,6 @@ $allPacks = array(
 	'Base/Via',
 	'Base/PullRequest530',
 	'Base/Issue841',
-	'Base/Either',
 	'Mysql/Preexist',
 	'Mysql/Double',
 	'Mysql/Writer',

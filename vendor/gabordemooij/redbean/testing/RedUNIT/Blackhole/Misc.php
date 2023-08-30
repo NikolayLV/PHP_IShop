@@ -9,7 +9,6 @@ use RedBeanPHP\Driver\RPDO as RPDO;
 use RedBeanPHP\Logger\RDefault as RDefault;
 use RedBeanPHP\RedException as RedException;
 use RedBeanPHP\BeanHelper\SimpleFacadeBeanHelper as SimpleFacadeBeanHelper;
-use RedBeanPHP\BeanHelper\DynamicBeanHelper as DynamicBeanHelper;
 use RedBeanPHP\QueryWriter;
 use RedBeanPHP\QueryWriter\AQueryWriter as AQueryWriter;
 use RedBeanPHP\QueryWriter\MySQL as MySQLQueryWriter;
@@ -396,14 +395,13 @@ class Misc extends Blackhole
 			pass();
 		}
 		asrt( R::count( 'bean' ), 1 );
+		R::freeze( FALSE );
 		try {
 			R::transaction( 'nope' );
 			fail();
 		} catch (\Exception $e ) {
 			pass();
 		}
-		R::freeze( FALSE );
-		asrt(R::transaction( 'nope' ), FALSE);
 		testpack( 'Test Camelcase 2 underscore' );
 		$names = array(
 			'oneACLRoute'              => 'one_acl_route',
@@ -678,17 +676,5 @@ class Misc extends Blackhole
 		asrt(count($found), 1);
 		asrt($found[0], 'SELECT 123');
 	}
-
-	/**
-	 * Model prefix per database #877.
-	 */
-	public function testDynamicBeanHelper()
-	{
-		R::addDatabase( 'TST1', 'sqlite:tst1', 'user', 'password', TRUE, TRUE, array(), new DynamicBeanHelper('Prefix1_')  );
-		R::addDatabase( 'TST2', 'sqlite:tst2', 'user', 'password', TRUE, TRUE, array(), \DBPrefix('Prefix2_')  );
-		R::selectDatabase('TST1');
-		asrt( R::dispense('bean')->box() instanceof \Prefix1_Bean, TRUE );
-		R::selectDatabase('TST2');
-		asrt( R::dispense('bean')->box() instanceof \Prefix2_Bean, TRUE );
-	}
 }
+

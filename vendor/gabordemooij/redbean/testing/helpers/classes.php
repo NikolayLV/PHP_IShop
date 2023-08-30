@@ -476,7 +476,7 @@ class DiagnosticModel extends \RedBeanPHP\SimpleModel
 		return $counter;
 	}
 	public function clearLog(){return $this->logs = array();}
-	public function getDataFromLog( $logIndex = 0, $property = NULL ){return $this->logs[$logIndex]['data'][$property];}
+	public function getDataFromLog( $logIndex = 0, $property ){return $this->logs[$logIndex]['data'][$property];}
 }
 
 /**
@@ -531,9 +531,6 @@ class Model_Probe extends DiagnosticModel {};
  */
 class Mockdapter implements \RedBeanPHP\Adapter {
 
-	public $answerGetCol = NULL;
-	public $errorExec = NULL;
-	public $answerGetSQL = NULL;
 	public function answer( $id )
 	{
 		$error = "error{$id}";
@@ -599,10 +596,8 @@ class TestRPO extends \RedBeanPHP\Driver\RPDO {
 class MockPDO extends \PDO {
 	public $attributes = array();
 	public function __construct() { }
-	#[\ReturnTypeWillChange]
 	public function setAttribute( $att, $val = NULL ){ $this->attributes[ $att ] = $val; }
 	public function getDiagAttribute( $att ){ return $this->attributes[ $att ]; }
-	#[\ReturnTypeWillChange]
 	public function getAttribute( $att ) {
 		if ($att == \PDO::ATTR_SERVER_VERSION) return '5.5.3';
 		return 'x';
@@ -636,11 +631,5 @@ class Model_Brokentoy extends \RedbeanPHP\SimpleModel {
 	}
 }
 
-/**
- * To test Dynamic BeanHelpers, resolving models with different prefixes and/or
- * namespaces.
- */
-class Prefix1_Bean extends \RedbeanPHP\SimpleModel { }
-class Prefix2_Bean extends \RedbeanPHP\SimpleModel { }
 
 define('REDBEAN_OODBBEAN_CLASS', '\DiagnosticBean');

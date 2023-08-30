@@ -12,9 +12,9 @@ abstract class Model
     public array $rules = [];
     public array $labels = [];
 
-    public function __construct() {
+    public function __construct()
+    {
         Db::getInstance();
     }
-
 
 }

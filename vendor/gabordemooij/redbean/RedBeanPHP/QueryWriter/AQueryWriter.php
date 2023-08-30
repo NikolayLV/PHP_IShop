@@ -104,16 +104,6 @@ abstract class AQueryWriter
 	public $typeno_sqltype = array();
 
 	/**
-	 * @var array
-	 */
-	public $sqltype_typeno = array();
-
-	/**
-	 * @var array
-	 */
-	public $encoding = array();
-
-	/**
 	 * @var bool
 	 */
 	protected static $noNuke = false;
@@ -150,9 +140,9 @@ abstract class AQueryWriter
 	 * If no template can be found for the specified type, the template for
 	 * '*' will be returned instead.
 	 *
-	 * @param string      $type     ( 'createTable' | 'widenColumn' | 'addColumn' )
-	 * @param string      $beanType ( type of bean or '*' to apply to all types )
-	 * @param string|NULL $property specify if you're looking for a property-specific template
+	 * @param string $type     ( 'createTable' | 'widenColumn' | 'addColumn' )
+	 * @param string $beanType ( type of bean or '*' to apply to all types )
+	 * @param string $property specify if you're looking for a property-specific template
 	 *
 	 * @return string
 	 */
@@ -448,9 +438,9 @@ abstract class AQueryWriter
 	 * In previous versions you could only store one key-entry, I have changed this to
 	 * improve caching efficiency (issue #400).
 	 *
-	 * @param string    $cacheTag cache tag (secondary key)
-	 * @param string    $key      key to store values under
-	 * @param array|int $values   rows or count to be stored
+	 * @param string $cacheTag cache tag (secondary key)
+	 * @param string $key      key to store values under
+	 * @param array  $values   content to be stored
 	 *
 	 * @return void
 	 */
@@ -582,7 +572,7 @@ abstract class AQueryWriter
 	/**
 	 * Determines whether a string can be considered JSON or not.
 	 * This is used by writers that support JSON columns. However
-	 * we don't want that code duplicated over all JSON supporting
+	 * we dont want that code duplicated over all JSON supporting
 	 * Query Writers.
 	 *
 	 * @param string $value value to determine 'JSONness' of.
@@ -746,7 +736,7 @@ abstract class AQueryWriter
 	 * Used for UUID support.
 	 *
 	 * @param integer $dataTypeID    magic number constant assigned to this data type
-	 * @param string  $SQLDefinition SQL column definition (e.g. INT(11))
+	 * @param string  $SQLDefinition SQL column definition (i.e. INT(11))
 	 *
 	 * @return self
 	 */
@@ -875,10 +865,6 @@ abstract class AQueryWriter
 	public function glueSQLCondition( $sql, $glue = NULL )
 	{
 		static $snippetCache = array();
-
-		if ( is_null( $sql ) ) {
-			return '';
-		}
 
 		if ( trim( $sql ) === '' ) {
 			return $sql;
