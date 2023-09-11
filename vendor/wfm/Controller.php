@@ -47,4 +47,25 @@ abstract class Controller
        ];
     }
 
+    public function isAjax(): bool
+    {
+        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
+    }
+
+    public function loadView($view, $vars = [])
+    {
+        extract($vars);
+        $prefix = str_replace('\\', '/', $this->route['admin_prefix']);
+        require APP . "/views/{$prefix}{$this->route['controller']}/{$view}.php";
+        die;
+    }
+
+    public function error_404($folder = 'Error', $view = 404, $response = 404)
+    {
+        http_response_code($response);
+        $this->setMeta(___('tpl_error_404'));
+        $this->route['controller'] = $folder;
+        $this->view = $view;
+    }
+
 }

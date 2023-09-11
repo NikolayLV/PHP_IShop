@@ -13,6 +13,34 @@ body {
 	padding-top: 135px;
 }
 
+.image-style-align-center {
+	text-align: center;
+}
+
+.image-style-align-left {
+	float: left;
+	margin-right: 20px;
+	max-width: 50%;
+}
+
+.image-style-align-right {
+	float: right;
+	margin-left: 20px;
+	max-width: 50%;
+}
+
+.category-desc::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+label.required::before {
+	content: "* ";
+	color: #f00;
+	font-weight: bold;
+}
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -188,6 +216,10 @@ li a.dropdown-item:focus, li a.dropdown-item:hover {
 
 .modal-body a {
 	color: #ee6e73;
+}
+
+.cart-table img {
+	max-height: 50px;
 }
 /* Header top */
 
