@@ -27,9 +27,36 @@ use wfm\View;
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col">
-                    <a href="tel:5551234567">
-                        <span class="icon-phone">&#9743;</span> 555 123-45-67
+                    <a href="tel:380688888888">
+                        <span class="icon-phone">&#9743;</span> 38 068-888-88-88
                     </a>
+                </div>
+                <div class="col">
+						<?php //new \app\widgets\page\Page([
+						//	'cache' => 0,
+						//	'class' => 'navbar-nav-middle ms-auto mb-2 mb-lg-0',
+						//	'prepend' => '<li><a href="' . base_url() . '">' . ___('tpl_home_link') . '</a></li>',
+						//]) ?>
+	                <ul class='navbar-nav-middle ms-auto mb-2 mb-lg-0' style="display: flex">
+		                <li class='navbar-nav' style="margin: 0 20px 0 20px;">
+			                <a class='nav-link' href="https://onlybuy.shop/"><?php __('tpl_home_link'); ?></a>
+		                </li>
+		                <li class='navbar-nav' style="margin: 0 20px 0 20px;">
+			                <a class='nav-link' href='page/o-magazine' style="white-space: nowrap;"><?php __('tpl_about_link'); ?></a>
+		                </li>
+		                <li class='navbar-nav' style="margin: 0 20px 0 20px;">
+			                <a class='nav-link' href='page/oplata-i-dostavka' style="white-space: nowrap;"><?php __('tpl_pay_link'); ?></a>
+		                </li>
+		                <li class='navbar-nav' style="margin: 0 20px 0 20px;">
+			                <a class='nav-link' href='page/kontakty' style="white-space: nowrap;"><?php __('tpl_contact_link'); ?></a>
+		                </li>
+		                <li class='navbar-nav' style="margin: 0 20px 0 20px;">
+			                <a class='nav-link' href='blogs' style="white-space: nowrap;"><?php __('tpl_blog_link'); ?></a>
+		                </li>
+		                <li class='navbar-nav' style="margin: 0 20px 0 20px;">
+			                <a class='nav-link' href='reviews' style="white-space: nowrap;"><?php __('tpl_reviews_link'); ?></a>
+		                </li>
+	                </ul>
                 </div>
                 <div class="col text-end icons">
                     <form action="search">
@@ -83,10 +110,10 @@ use wfm\View;
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <?php new \app\widgets\menu\Menu([
-                            'class' => 'navbar-nav ms-auto mb-2 mb-lg-0',
-                            'cache' => 30,
-                        ]) ?>
+						<?php new \app\widgets\menu\Menu([
+							'class' => 'navbar-nav ms-auto mb-2 mb-lg-0',
+							'cache' => 30,
+						]) ?>
                     </div>
 
                 </div>

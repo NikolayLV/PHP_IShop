@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'user_download_error' => 'Файл не найден',
+    'user_download_error' => 'Файл не знайдено',
 ];

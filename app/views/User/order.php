@@ -35,9 +35,9 @@
                         <?php foreach ($order as $item): ?>
                             <tr>
                                 <td><a href="product/<?= $item['slug'] ?>"><?= $item['title'] ?></a></td>
-                                <td>$<?= $item['price'] ?></td>
+                                <td>₴<?= $item['price'] ?></td>
                                 <td><?= $item['qty'] ?></td>
-                                <td>$<?= $item['sum'] ?></td>
+                                <td>₴<?= $item['sum'] ?></td>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>
@@ -67,7 +67,7 @@
                                 </tr>
                                 <tr>
                                     <td><?php __('user_order_total'); ?></td>
-                                    <td>$<?= $order[0]['total'] ?></td>
+                                    <td>₴<?= $order[0]['total'] ?></td>
                                 </tr>
                                 <tr>
                                     <td><?php __('user_order_note'); ?></td>

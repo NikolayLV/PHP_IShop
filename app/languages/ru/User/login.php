@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'user_login_login_btn' => 'Вход',
-    'user_login_success_login' => 'Вы успешно авторизованы',
-    'user_login_error_login' => 'Логин/пароль введены неверно',
+    'user_login_login_btn' => 'Вхід',
+    'user_login_success_login' => 'Ви успішно авторизовані',
+    'user_login_error_login' => 'Логін/пароль введено невірно',
 ];

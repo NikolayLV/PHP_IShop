@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'user_credentials_title' => 'Учетные данные',
-    'user_credentials_save_btn' => 'Сохранить',
-    'user_credentials_success' => 'Данные сохранены',
-    'user_credentials_error' => 'Ошибка сохранения',
+    'user_credentials_title' => 'Облікові дані',
+    'user_credentials_save_btn' => 'Зберегти',
+    'user_credentials_success' => 'Дані збережені',
+    'user_credentials_error' => 'Помилка збереження',
 ];

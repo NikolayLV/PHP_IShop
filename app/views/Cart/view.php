@@ -35,7 +35,7 @@
                                 </td>
                                 <td><a href="product/<?= $item['slug'] ?>"><?= $item['title'] ?></a></td>
                                 <td><?= $item['qty'] ?></td>
-                                <td>$<?= $item['price'] ?></td>
+                                <td>₴<?= $item['price'] ?></td>
                                 <td><a href="cart/delete?id=<?= $id ?>" data-id="<?= $id ?>" class="del-item"><i class="far fa-trash-alt"></i></a></td>
                             </tr>
                         <?php endforeach; ?>

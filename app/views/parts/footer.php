@@ -11,7 +11,7 @@ use wfm\View;
                 <div class="col-md-3 col-6">
                     <h4><?php __('tpl_information'); ?></h4>
                     <?php new \app\widgets\page\Page([
-//                        'cache' => 0,
+                        'cache' => 30,
                         'class' => 'list-unstyled',
                         'prepend' => '<li><a href="' . base_url() . '">' . ___('tpl_home_link') . '</a></li>',
                     ]) ?>
@@ -20,18 +20,18 @@ use wfm\View;
                 <div class="col-md-3 col-6">
                     <h4><?php __('tpl_work_hours'); ?></h4>
                     <ul class="list-unstyled">
-                        <li>г. Киев, ул. Пушкина, 10</li>
-                        <li>пн-вс: 9:00 - 18:00</li>
-                        <li>без перерыва</li>
+                        <li>м. Київ</li>
+                        <li>пн-нд: 9:00 - 18:00</li>
+                        <li>без перерви</li>
                     </ul>
                 </div>
 
                 <div class="col-md-3 col-6">
                     <h4><?php __('tpl_contacts'); ?></h4>
                     <ul class="list-unstyled">
-                        <li><a href="tel:5551234567">555 123-45-67</a></li>
-                        <li><a href="tel:5551234567">555 123-45-68</a></li>
-                        <li><a href="tel:5551234567">555 123-45-69</a></li>
+                        <li><a href="tel:380688888888">38 068-888-88-88</a></li>
+                        <li><a href="tel:380688888888">38 068-888-88-88</a></li>
+                        <li><a href="tel:380688888888">38 068-888-88-88</a></li>
                     </ul>
                 </div>
 

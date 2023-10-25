@@ -6,7 +6,12 @@ return [
     'tpl_contacts' => 'Contacts',
     'tpl_we_online' => 'We are online',
     'tpl_search' => 'Search...',
-    'tpl_home_link' => 'Home',
+	'tpl_home_link' => 'Home',
+	'tpl_about_link' => 'About shop',
+	'tpl_pay_link' => 'Payment and delivery',
+	'tpl_contact_link' => 'Contact',
+	'tpl_blog_link' => 'Blog',
+	'tpl_reviews_link' => 'Reviews',
 
     'tpl_home_breadcrumbs' => '<i class="fas fa-home"></i>',
     'tpl_total_pagination' => 'product(s) from',

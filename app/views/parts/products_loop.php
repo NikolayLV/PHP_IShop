@@ -13,9 +13,9 @@
                 <div class="product-bottom-details d-flex justify-content-between">
                     <div class="product-price">
                         <?php if ($product['old_price']): ?>
-                            <small>$<?= $product['old_price'] ?></small>
+                            <small>₴<?= $product['old_price'] ?></small>
                         <?php endif; ?>
-                        $<?= $product['price'] ?></div>
+                        ₴<?= $product['price'] ?></div>
                     <div class="product-links">
                         <a class="add-to-cart" href="cart/add?id=<?= $product['id'] ?>" data-id="<?= $product['id'] ?>"><?= get_cart_icon($product['id']); ?></a>
 
