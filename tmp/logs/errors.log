@@ -1,0 +1,10 @@
+[2023-11-20 12:13:14] Текст ошибки: No connection to DB | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Db.php | Строка: 19
+=================
+[2023-11-20 12:13:14] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Router.php | Строка: 66
+=================
+[2023-11-20 12:13:25] Текст ошибки: No connection to DB | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Db.php | Строка: 19
+=================
+[2023-11-20 12:14:22] Текст ошибки: file_put_contents(C:\OSPanel\domains\onlybuy.sho/tmp/cache/2953c6ae6820d007c488f1c991e91b06.txt): Failed to open stream: No such file or directory | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Cache.php | Строка: 16
+=================
+[2023-11-20 12:19:16] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Router.php | Строка: 66
+=================

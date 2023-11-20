@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'dsn' => 'mysql:host=localhost:3306;dbname=onlybuys_shop;charset=utf8',
-    'user' => 'onlybuys_admin',
-    'password' => '7AajnTtPnBqUt5C',
+    'dsn' => 'mysql:host=localhost;dbname=newishop;charset=utf8',
+    'user' => 'root',
+    'password' => '',
 ];
