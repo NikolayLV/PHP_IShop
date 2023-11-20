@@ -8,3 +8,9 @@
 =================
 [2023-11-20 12:19:16] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Router.php | Строка: 66
 =================
+[2023-11-20 12:32:50] Текст ошибки: Метод app\controllers\BlogController::modelAction не найден | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Router.php | Строка: 59
+=================
+[2023-11-20 12:34:14] Текст ошибки: Метод app\controllers\BlogController::modelAction не найден | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Router.php | Строка: 59
+=================
+[2023-11-20 12:34:23] Текст ошибки: Метод app\controllers\BlogController::modelAction не найден | Файл: C:\OSPanel\domains\onlybuy.sho\vendor\wfm\Router.php | Строка: 59
+=================
